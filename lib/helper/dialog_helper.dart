@@ -3,7 +3,8 @@ import 'package:get/get.dart';
 
 class DialogHelper {
   //show error dialog
-  static void showErroDialog({String title = 'Error', String? description = 'Something went wrong'}) {
+  static void showErroDialog(
+      {String title = 'Error', String? description = 'Something went wrong'}) {
     Get.dialog(
       Dialog(
         child: Padding(
@@ -11,10 +12,7 @@ class DialogHelper {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Text(
-                title,
-                style: Get.textTheme.headline4,
-              ),
+              Text(title, style: Get.textTheme.headline4),
               Text(
                 description ?? '',
                 style: Get.textTheme.headline6,
